@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tech at Mac</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="js/countdown.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid main-container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img id="logo" src="img/techatmaclogo.png" class="center-block img-responsive">
+                    <h2>The club website is coming soon</h2>
+                    <div class="center-block underline-stroke"></div>
+                </div>
+                <div class="col-lg-12">
+                    <p>This site is a work in progress. Currently our club members are working on a layout that will satisfy our club needs.
+                        We're looking to have it finsihed by the first week of September.
+                    </p>
+                </div>
+            </div>
+            <div class="countdown">
+                <div class="time-slot">
+                    <h1 id="days">326</h1>
+                    <span>days</span>
+                </div>
+                <div class="vr hidden-xs"></div>
+                <div class="time-slot">
+                    <h1 id="hrs">14</h1>
+                    <span>hours</span>
+                </div>
+                <div class="vr hidden-xs"></div>
+                <div class="time-slot">
+                    <h1 id="mins">50</h1>
+                    <span>mins</span>
+                </div>
+                <div class="vr hidden-xs"></div>
+                <div class="time-slot">
+                    <h1 id="secs">32</h1>
+                    <span>secs</span>
+                </div>
+            </div>
+            <a href="#tabs" id="caret" class="center-block">
+                <img src="img/caret.png" alt="\/">
+            </a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>About Us</h2>
+                    <div class="center-block underline-stroke"></div>
+                </div>
+                <div class="col-lg-12">
+                    <p>We're a new club at McMaster University.
+                        Our goal is to keep current with technology innovations. As well as discussions on how we can apply what we learn to our daily studies and research.
+                            Submit your student email below to apply!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#subscribe" aria-controls="subscribe" role="tab" data-toggle="tab">Apply</a></li>
+                            <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="subscribe">
+                                <p>Submit your name and student email below to get update as soon as we have our first meeting</p>
+                                <input type="text" class="form-control" placeholder="your name">
+                                <input type="text" class="form-control" placeholder="your student email">
+                                <button class="btn btn-outline pull-right">apply now</button>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="contact">
+                                <p>Submit your name and student email below to contact a club member with any questions</p>
+                                <input type="text" class="form-control" placeholder="your name">
+                                <input type="text" class="form-control" placeholder="your student email">
+                                <input type="text" class="form-control" placeholder="subject">
+                                <textarea class="form-control" placeholder="your message" rows="3"></textarea>
+                                <button class="btn btn-outline pull-right">contact</button>
+                                <div class="clearfix"></div>                            
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $countdown = "2016/09/01 00:02:00";
+                setCountdown($countdown);
+            });
+        </script>
+        <p class="text-center low-color"><a href="http://mcmaster.tech">Tech at Mac</a> Designed by <a href="http://mgob.co">Thomas Sikma</a><br>
+        <a href="img/bg.jpg">Background Photo</a> Taken by <a href="https://www.facebook.com/jinsungleephotography/?pnref=lhc">Jin Lee</a></p>
+
+    </body>
+</html>
